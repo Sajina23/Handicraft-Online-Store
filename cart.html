@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart — Handicraft Online Store</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo-section">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🎨</span>
+          <span class="logo-text">Handicraft Online Store</span>
+        </a>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart-section" aria-live="polite" aria-atomic="true">
+        <a href="cart.html" class="cart-link" aria-label="View cart">🛒 <span id="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="cart-heading">
+      <h1 id="cart-heading">Your Cart</h1>
+      <p class="intro-text">Items you have added to your cart are listed below. This is a demo cart stored in your browser.</p>
+
+      <div id="cart-items" class="cart-items">
+        <!-- Cart items rendered by JS -->
+      </div>
+
+      <div class="cart-actions" style="margin-top:1.5rem;">
+        <button id="clear-cart" class="btn-secondary">Clear Cart</button>
+        <a href="products.html" class="cta-button">Continue Shopping</a>
+        <button id="checkout-btn" class="cta-button">Checkout</button>
+      </div>
+
+      <!-- Checkout form (hidden until checkout) -->
+      <section id="checkout-section" style="display:none; margin-top:1.5rem;" aria-labelledby="checkout-heading">
+        <h2 id="checkout-heading">Checkout</h2>
+        
+        <!-- Payment Methods Section -->
+        <div class="payment-methods">
+          <h3>We Accept</h3>
+          
+          <div class="payment-logos-grid">
+            <button type="button" class="payment-logo-box visa" title="Visa">VISA</button>
+            <button type="button" class="payment-logo-box mastercard" title="Mastercard">🟡🔴 Mastercard</button>
+            <button type="button" class="payment-logo-box amex" title="American Express">AMEX</button>
+            <button type="button" class="payment-logo-box eftpos" title="EFTPOS">eftpos</button>
+            <button type="button" class="payment-logo-box paypal" title="PayPal">PayPal</button>
+            <button type="button" class="payment-logo-box afterpay" title="Afterpay">afterpay</button>
+            <button type="button" class="payment-logo-box zip" title="Zip">zip</button>
+            <button type="button" class="payment-logo-box applepay" title="Apple Pay">Apple Pay</button>
+            <button type="button" class="payment-logo-box googlepay" title="Google Pay">Google Pay</button>
+          </div>
+        </div>
+        
+        <form id="checkout-form" class="checkout-form" novalidate>
+          <div class="form-row">
+            <label for="cust-name">Full name *</label>
+            <input id="cust-name" name="name" required type="text" />
+          </div>
+          <div class="form-row">
+            <label for="cust-email">Email *</label>
+            <input id="cust-email" name="email" required type="email" />
+          </div>
+          <div class="form-row">
+            <label for="cust-address">Shipping address *</label>
+            <textarea id="cust-address" name="address" required rows="3"></textarea>
+          </div>
+          <div class="form-row">
+            <label for="cust-note">Order note (optional)</label>
+            <input id="cust-note" name="note" type="text" />
+          </div>
+          <div class="form-row">
+            <button type="submit" class="cta-button">Place Order</button>
+            <button type="button" id="cancel-checkout" class="btn-secondary">Cancel</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="order-confirmation" style="display:none; margin-top:1.5rem;" aria-live="polite">
+        <!-- Order confirmation rendered here -->
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About</h4>
+          <p>Handicraft Online Store celebrates handmade home goods from independent artisans worldwide.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <ul class="social-links">
+            <li><a href="#" aria-label="Facebook">f</a></li>
+            <li><a href="#" aria-label="Instagram">📷</a></li>
+            <li><a href="#" aria-label="Twitter">𝕏</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Handicraft Online Store. All rights reserved. <a href="#privacy">Privacy Policy</a></p>
+        <p>This is a static website for ICT726 assessment 3. No real transactions are processed.</p>
+        <p>Student Name: Sajina Rana Magar</p>
+        <p>Student Id: 20033821</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

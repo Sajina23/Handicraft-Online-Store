@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Handicraft Online Store</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo-section">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🎨</span>
+          <span class="logo-text">Handicraft Online Store</span>
+        </a>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart-section" aria-live="polite" aria-atomic="true">
+        <a href="cart.html" class="cart-link" aria-label="View cart">🛒 <span id="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Contact Us</h1>
+      <p class="intro-text">Have questions or want to get in touch? We'd love to hear from you.</p>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <div class="info-item">
+            <h3>📧 Email</h3>
+            <p><b><a href="mailto:hello@handicraftonlinestore.example">hello@handicraftonlinestore.example</a></b></p>
+            <p>We typically respond within 24 hours.</p>
+          </div>
+          <div class="info-item">
+            <h3>📞 Phone</h3>
+            <p><b><a href="tel:+1-555-123-4567">+1 (555) 123-4567</a></b></p>
+          </div>
+          <div class="Opening Hours">
+          <h3>⏰ Business Hours</h3>
+          <p><strong>Monday–Friday:</strong> 9 AM – 5 PM EST</p>
+          <p><strong>Saturday:</strong> 10 AM – 3 PM</p>
+          <p><strong>Sunday:</strong> Closed</p>
+          </div>
+          
+          <div class="info-item">
+            <h3>📍 Visit Us</h3>
+            <p> <strong>59 Darby Street, Cooks Hill<br>Newcastle, NSW 2300</strong></p>
+          </div>
+          <div class="info-item">
+            <h3>Follow Us</h3>
+            <ul class="social-links-large">
+              <li><a href="https://facebook.com" aria-label="Facebook">Facebook</a></li>
+              <li><a href="https://instagram.com" aria-label="Instagram">Instagram</a></li>
+              <li><a href="https://twitter.com" aria-label="Twitter">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <h2>Send us a Message</h2>
+          <form id="contact-form" method="POST" action="#" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                placeholder="Your full name"
+                aria-required="true"
+                aria-describedby="name-error">
+              <span id="name-error" class="error-message" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="your@email.com"
+                aria-required="true"
+                aria-describedby="email-error">
+              <span id="email-error" class="error-message" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="+1 (555) 123-4567"
+                aria-describedby="phone-error">
+              <span id="phone-error" class="error-message" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required aria-required="true" aria-describedby="subject-error">
+                <option value="">Select a subject</option>
+                <option value="inquiry">Product Inquiry</option>
+                <option value="custom">Custom Order</option>
+                <option value="partnership">Partnership/Collaboration</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+              <span id="subject-error" class="error-message" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="6" 
+                required 
+                placeholder="Your message here..."
+                aria-required="true"
+                aria-describedby="message-error"></textarea>
+              <span id="message-error" class="error-message" role="alert"></span>
+            </div>
+
+            <div class="form-group checkbox">
+              <input type="checkbox" id="privacy" name="privacy" required aria-required="true">
+              <label for="privacy">I agree to the <a href="#privacy-policy">privacy policy</a> *</label>
+              <span id="privacy-error" class="error-message" role="alert"></span>
+            </div>
+
+            <div id="form-success" class="success-message" role="alert" style="display:none;">
+              Thank you for your message! We'll get back to you soon.
+            </div>
+
+            <button type="submit" class="cta-button">Send Message</button>
+            <button type="reset" class="btn-secondary">Clear Form</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About</h4>
+          <p>Handicraft Online Store celebrates handmade home goods from independent artisans worldwide.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <ul class="social-links">
+            <li><a href="#" aria-label="Facebook">f</a></li>
+            <li><a href="#" aria-label="Instagram">📷</a></li>
+            <li><a href="#" aria-label="Twitter">𝕏</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Handicraft Online Store. All rights reserved. | <a href="#privacy">Privacy Policy</a></p>
+        <p>This is a static website for ICT726 assessment 3. No real data is collected.</p>
+        <p>Student Name: Sajina Rana Magar</p>
+        <p>Student Id: 20033821</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
